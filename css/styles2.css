@@ -1,0 +1,128 @@
+:root {
+    --main: #003366;
+    --main-background: #f0f2f5;
+    --secondary-background: #5a5a5a;
+    --black: #1a1a1a;
+    --link: #aa13c8;
+    --linkhover: #d50dca;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--main-background);
+}
+
+.wrapper {
+    width: 60%;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header {
+    background-color: var(--main);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: var(--black) 2px solid;
+}
+
+.main {
+    display: table;
+    width: 100%;
+}
+
+.menu {
+    display: table-cell;
+    width: 17%;
+    padding: 20px;
+    box-sizing: border-box;
+    vertical-align: top;
+    background: linear-gradient(270deg, var(--main-background), var(--secondary-background));
+}
+
+.menu a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+}
+
+.content {
+    display: table-cell;
+    width: 75%;
+    background-color: var(--main-background);
+    padding: 20px;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.content img {
+    max-width: 225px;
+    height: 225px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+}
+
+footer {
+    background-color: var(--main);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-top: var(--black) solid 2px;
+}
+footer a {
+    text-decoration: none;
+    color: var(--link);
+    font-weight: 500;
+}
+footer a:hover {
+    color: var(--linkhover);
+    transform: scale(1.1) ;
+}
+
+.copyright {
+    background-color: var(--black);
+    color: var(--main-background);
+    text-align: center;
+    font-size: 0.9em;
+    padding: 10px;
+}
+
+@media (max-width: 576px) {
+    .wrapper {
+        min-height: 500px;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .wrapper {
+        min-height: 600px;
+        padding: 15px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px to 991px) */
+@media (min-width: 769px) and (max-width: 992px) {
+    .wrapper {
+        min-height: 700px;
+        padding: 20px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px to 1199px) */
+@media (min-width: 993px) and (max-width: 1200px) {
+    .wrapper {
+        min-height: 800px;
+        padding: 25px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1201px) {
+    .wrapper {
+        min-height: 900px;
+        padding: 30px;
+    }
+}
